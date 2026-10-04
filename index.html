@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chetan Bagul | Full-Stack Developer (Java, Spring Boot, React), Nashik</title>
+<meta name="description" content="Full-stack developer (Java, Spring Boot, React) in Nashik. Built and deployed DukanKhata, a live POS and accounting SaaS. Resume, projects and contact.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='18' fill='%230f2a4a'/><text x='50' y='68' font-size='54' font-family='Arial' font-weight='700' fill='white' text-anchor='middle'>CB</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f8fb;--card:#fff;--ink:#0f1b2d;--soft:#51607a;--line:#dde4ee;--navy:#0f2a4a;--accent:#0b7a75;--accent-bg:#e3f3f2;--f:'IBM Plex Sans',system-ui,-apple-system,Segoe UI,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--card:#121c30;--ink:#e9eef7;--soft:#9aaac4;--line:#233351;--navy:#1b3a66;--accent:#4fd1c5;--accent-bg:#12303a}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:400 1rem/1.65 var(--f);background:var(--bg);color:var(--ink)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.w{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line)}
+nav .w{display:flex;align-items:center;gap:6px 22px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+nav b{margin-right:auto;font-weight:700;letter-spacing:-.01em}
+nav a{color:var(--soft);text-decoration:none;font-size:.93rem;font-weight:500}
+nav a:hover{color:var(--ink)}
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.95rem;padding:10px 18px;border-radius:8px;background:var(--navy);color:#fff!important;border:1px solid var(--navy)}
+.btn.o{background:transparent;color:var(--ink)!important;border-color:var(--line)}
+.btn:hover{filter:brightness(1.15)}
+.hero{padding:56px 0 40px;display:grid;grid-template-columns:1fr 250px;gap:44px;align-items:center}
+.tag{display:inline-block;background:var(--accent-bg);color:var(--accent);font-weight:600;font-size:.85rem;padding:4px 12px;border-radius:99px;margin-bottom:16px}
+h1{font-size:clamp(2.1rem,5vw,3.2rem);line-height:1.1;letter-spacing:-.03em;font-weight:700}
+.hero p.l{color:var(--soft);font-size:1.12rem;margin:16px 0 24px;max-width:36em}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px}
+.id{padding:18px;text-align:center}
+.id img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:10px;margin-bottom:12px}
+.id strong{display:block;font-size:1.1rem}
+.id span{display:block;color:var(--soft);font-size:.9rem}
+.id a{font-size:.92rem;text-decoration:none}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-bottom:8px}
+.facts div{padding:16px 18px}
+.facts b{display:block;font-size:1.05rem;color:var(--accent)}
+.facts span{color:var(--soft);font-size:.92rem}
+section{padding:52px 0 0}
+h2{font-size:1.65rem;letter-spacing:-.02em;margin-bottom:6px}
+.sub{color:var(--soft);margin-bottom:22px;max-width:44em}
+.three{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.three .card{padding:22px}
+h3{font-size:1.1rem;margin-bottom:6px}
+.three p,.dec p{color:var(--soft);font-size:.96rem}
+.case{padding:clamp(20px,4vw,36px)}
+.case header{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;justify-content:space-between;margin-bottom:6px}
+.case h3{font-size:1.5rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 18px}
+.chips span{font-size:.82rem;font-weight:500;padding:3px 10px;border-radius:6px;background:var(--bg);border:1px solid var(--line);color:var(--soft)}
+.case h4{font-size:.95rem;margin:20px 0 6px;color:var(--accent)}
+.dec{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:8px}
+.dec div{border-left:3px solid var(--accent);padding:2px 0 2px 14px}
+.dec b{display:block;font-size:.98rem}
+.arch{width:100%;height:auto;margin-top:8px}
+.arch rect{fill:var(--bg);stroke:var(--line);stroke-width:1.5}
+.arch rect.h{fill:var(--accent-bg);stroke:var(--accent)}
+.arch text{fill:var(--ink);font:500 13px var(--f)}
+.arch text.s{fill:var(--soft);font-size:11px}
+.arch path{stroke:var(--soft);stroke-width:1.5;fill:none}
+.pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin-top:16px}
+.pair .card{padding:24px}
+.pair ul,.case ul{padding-left:1.15em;color:var(--soft);font-size:.96rem}
+.pair li,.case li{margin-bottom:5px}
+.lnk{margin-top:14px;font-weight:600;font-size:.95rem;display:flex;gap:16px;flex-wrap:wrap}
+table{width:100%;border-collapse:collapse;font-size:.96rem}
+td{padding:12px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border:0}
+td:first-child{font-weight:600;width:170px}
+td:last-child{color:var(--soft)}
+.tl .r{display:grid;grid-template-columns:150px 1fr;gap:4px 24px;padding:16px 24px;border-bottom:1px solid var(--line)}
+.tl .r:last-child{border:0}
+.tl .d{color:var(--soft);font-size:.92rem}
+.tl p{color:var(--soft);font-size:.95rem}
+.certs{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:14px}
+.certs button{all:unset;cursor:zoom-in;display:block;background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.certs button:focus-visible{outline:3px solid var(--accent)}
+.certs img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
+.certs span{display:block;padding:8px 12px;font-size:.88rem;font-weight:500}
+dialog{border:0;border-radius:12px;padding:0;max-width:min(92vw,1000px);background:var(--card)}
+dialog::backdrop{background:rgba(5,10,20,.75)}
+dialog img{display:block;max-width:100%;max-height:80vh}
+dialog form{text-align:right;padding:8px}
+dialog button{padding:6px 14px;border-radius:6px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;font:600 .9rem var(--f)}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.res .card{padding:18px}
+.res small{display:block;color:var(--soft);margin:2px 0 10px;font-size:.9rem}
+.res a{font-size:.92rem;font-weight:600;margin-right:12px}
+.contact{padding:32px;text-align:center;background:var(--navy);color:#fff;border:0}
+.contact h2{color:#fff}
+.contact p{color:#cfe0f5;margin-bottom:18px}
+.contact .cta{justify-content:center}
+.contact .btn{background:#fff;color:#0f2a4a!important;border-color:#fff}
+.contact .btn.o{background:transparent;color:#fff!important;border-color:#6d89b0}
+footer{padding:34px 0 50px;text-align:center;color:var(--soft);font-size:.9rem}
+@media (max-width:760px){.hero{grid-template-columns:1fr}.id{max-width:260px}.tl .r{grid-template-columns:1fr}td:first-child{width:110px}nav .hide{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<nav><div class="w">
+  <b>Chetan Bagul</b>
+  <a class="hide" href="#case">Flagship project</a><a class="hide" href="#more">Other projects</a><a class="hide" href="#skills">Skills</a><a class="hide" href="#path">Experience</a><a href="#contact">Contact</a>
+  <a class="btn" href="resumes/Chetan_Bagul_FullStack_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+</div></nav>
+
+<main class="w">
+<div class="hero">
+  <div>
+    <span class="tag">Open to Full-Stack and Java roles · Nashik</span>
+    <h1>Full-stack developer who has already shipped a live SaaS.</h1>
+    <p class="l">I build React 18 + TypeScript frontends and Java 17 / Spring Boot 3 backends end to end. My project DukanKhata is live at dukankhata.in: frontend on Vercel, API on Docker and Render, with Razorpay payments and mobile-grade security. MCA 2025.</p>
+    <div class="cta">
+      <a class="btn" href="#case">See my flagship project</a>
+      <a class="btn o" href="https://dukankhata.in" target="_blank" rel="noopener">Open live product</a>
+      <a class="btn o" href="resumes/Chetan_Bagul_FullStack_Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+    </div>
+  </div>
+  <aside class="card id">
+    <img src="myPic.jpg" alt="Portrait of Chetan Bagul" width="214" height="214">
+    <strong>Chetan Bagul</strong>
+    <span>Full-Stack Developer</span>
+    <span><a href="mailto:bglchetan@gmail.com">bglchetan@gmail.com</a></span>
+    <span><a href="tel:+919503994074">+91 95039 94074</a></span>
+  </aside>
+</div>
+
+<div class="facts">
+  <div class="card"><b>Live in production</b><span>dukankhata.in with API at api.dukankhata.in</span></div>
+  <div class="card"><b>React 18 · TypeScript</b><span>Vite, Tailwind, Axios, React Router</span></div>
+  <div class="card"><b>Java 17 · Spring Boot 3</b><span>REST APIs, JPA/Hibernate, MongoDB, MySQL</span></div>
+  <div class="card"><b>Deployed end to end</b><span>Vercel, Docker, Render, custom-domain SSL</span></div>
+</div>
+
+<section>
+  <h2>Why a team can rely on me</h2>
+  <p class="sub">Three things you can verify in the projects below.</p>
+  <div class="three">
+    <div class="card"><h3>I own the whole stack</h3><p>React and TypeScript on the front, Spring Boot and MongoDB on the back, then Docker, Render and Vercel to put it online.</p></div>
+    <div class="card"><h3>I protect data and money</h3><p>Split payments are atomic, tenant data is isolated per user, JWT sessions are locked to one device and webhook signatures are verified before anything is trusted.</p></div>
+    <div class="card"><h3>I care about speed and resilience</h3><p>Vite code-splitting, lazy-loaded routes and an offline fallback keep the app usable on weak shop networks.</p></div>
+  </div>
+</section>
+
+<section id="case">
+  <h2>Flagship project: DukanKhata</h2>
+  <p class="sub">A B2B POS and accounting SaaS for Indian retail shops. Read this one if you only have two minutes.</p>
+  <article class="card case">
+    <header><h3>DukanKhata: Real-time POS and Udhar Khata ledger</h3><span class="lnk" style="margin:0"><a href="https://dukankhata.in" target="_blank" rel="noopener">Live site</a><a href="https://github.com/chetan-bagul" target="_blank" rel="noopener">GitHub</a></span></header>
+    <div class="chips"><span>Java 17</span><span>Spring Boot 3</span><span>MongoDB</span><span>React 18 + TypeScript</span><span>Vite</span><span>Tailwind CSS</span><span>Razorpay</span><span>Docker</span><span>Render</span><span>Vercel</span></div>
+
+    <h4>The problem</h4>
+    <p style="color:var(--soft)">Small Indian retailers sell on credit (udhar) and track it in paper books. Bills, GST invoices, mixed payments and staff commissions all end up in different places, and balances drift.</p>
+
+    <h4>What I built</h4>
+    <ul>
+      <li>Multi-tenant platform with real-time POS billing, GST A4 invoices, customer ledgers and staff commission tracking.</li>
+      <li>Two modes: SMALL_SHOP (30-second daily closing with profit/loss badges) and LARGE_SHOP (full POS with itemized carts).</li>
+      <li>GST invoice printing, WhatsApp (wa.me) receipt sharing, and a localStorage offline fallback in the React app.</li>
+      <li>Performance: Vite code-splitting and <code>React.lazy()</code> separate the landing page from the Tailwind app.</li>
+    </ul>
+
+    <h4>Engineering decisions</h4>
+    <div class="dec">
+      <div><b>Atomic split-payment checkout</b><p>One bill splits across Cash, UPI and customer credit with 0% data drift.</p></div>
+      <div><b>Anti-IDOR data isolation</b><p>Queries are scoped by owner (<code>findByIdAndUserId</code>), so one merchant can never read another's data.</p></div>
+      <div><b>Verified payment webhooks</b><p>Razorpay <code>order.paid</code> and <code>payment.captured</code> are checked with HMAC SHA-256 before upgrading a subscription.</p></div>
+      <div><b>Session and token security</b><p>JWT auth, single-device session eviction, 401 auto-logout via Axios interceptors, and AES-256 token encryption (OWASP MASVS).</p></div>
+      <div><b>Fast, offline-resilient UI</b><p>Vite code-splitting and <code>React.lazy()</code> separate the landing page from the Tailwind app; a localStorage fallback covers poor connectivity.</p></div>
+    </div>
+
+    <h4>Architecture</h4>
+    <svg class="arch" viewBox="0 0 760 190" role="img" aria-label="Architecture: The React client calls a Spring Boot REST API on Docker and Render, which uses MongoDB. Razorpay sends signed webhooks to the API.">
+      <defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#51607a" stroke="none"/></marker></defs>
+      <rect x="10" y="20" width="170" height="60" rx="8"/><text x="95" y="48" text-anchor="middle">React 18 web app</text><text class="s" x="95" y="66" text-anchor="middle">Vercel</text>
+      <rect x="10" y="110" width="170" height="60" rx="8"/><text x="95" y="138" text-anchor="middle">Axios + JWT</text><text class="s" x="95" y="156" text-anchor="middle">401 auto-logout</text>
+      <rect class="h" x="270" y="55" width="210" height="80" rx="8"/><text x="375" y="88" text-anchor="middle">Spring Boot 3 REST API</text><text class="s" x="375" y="108" text-anchor="middle">Docker · Render · SSL</text>
+      <rect x="570" y="20" width="170" height="60" rx="8"/><text x="655" y="48" text-anchor="middle">MongoDB</text><text class="s" x="655" y="66" text-anchor="middle">Tenant-scoped data</text>
+      <rect x="570" y="110" width="170" height="60" rx="8"/><text x="655" y="138" text-anchor="middle">Razorpay</text><text class="s" x="655" y="156" text-anchor="middle">HMAC-signed webhooks</text>
+      <path d="M180 50L268 85" marker-end="url(#a)"/><path d="M180 140L268 105" marker-end="url(#a)"/>
+      <path d="M480 85L568 55" marker-end="url(#a)"/><path d="M568 140L482 108" marker-end="url(#a)"/>
+    </svg>
+  </article>
+</section>
+
+<section id="more">
+  <h2>More projects</h2>
+  <div class="pair">
+    <article class="card">
+      <h3>Bank Management Services</h3>
+      <div class="chips"><span>Java</span><span>Spring Boot</span><span>Docker</span><span>Angular 19</span></div>
+      <ul>
+        <li>REST backend for core banking operations with layered controller, service and repository design.</li>
+        <li>Swagger/OpenAPI docs, Maven builds, Docker images built with Google Jib.</li>
+        <li>Angular 19 (TypeScript, RxJS) frontend; JUnit 5 and Mockito tests across all three layers.</li>
+      </ul>
+      <div class="lnk"><a href="https://github.com/chetan-bagul" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+    <article class="card">
+      <h3>Fresh Feast: Food delivery and charity</h3>
+      <div class="chips"><span>React</span><span>Redux Toolkit</span><span>Node.js</span><span>MongoDB</span><span>Socket.IO</span></div>
+      <ul>
+        <li>MERN platform with User, Kitchen, Charity, Delivery and Admin roles, each with its own portal and an admin dashboard.</li>
+        <li>Socket.IO real-time sync for orders, delivery tasks and kitchen queues.</li>
+        <li>Delivery claim workflow with a server-calculated Rs. 20 fee; MongoDB in Docker with seed scripts.</li>
+      </ul>
+      <div class="lnk"><a href="https://github.com/chetan-bagul" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical skills</h2>
+  <div class="card" style="margin-top:18px"><table>
+    <tr><td>Frontend</td><td>React 18, TypeScript, JavaScript, Vite, Tailwind CSS, React Router v6, Axios, Angular, HTML, CSS</td></tr>
+    <tr><td>Backend</td><td>Java 17, Spring Boot 3, Spring Data JPA/Hibernate, REST APIs, Node.js/Express, Webhooks, Swagger/OpenAPI, Maven</td></tr>
+    <tr><td>Databases</td><td>MongoDB, MySQL, SQL Server</td></tr>
+    <tr><td>Security</td><td>JWT auth, HMAC SHA-256, AES-256, IDOR prevention, session management (OWASP MASVS)</td></tr>
+    <tr><td>DevOps and cloud</td><td>Docker, Google Jib, Vercel, Render, AWS, Git/GitHub, CI/CD and Agile concepts</td></tr>
+    <tr><td>Testing and tools</td><td>JUnit 5, Mockito, Postman, IntelliJ IDEA, Android</td></tr>
+  </table></div>
+</section>
+
+<section id="path">
+  <h2>Experience and education</h2>
+  <div class="card tl" style="margin-top:18px">
+    <div class="r"><div class="d">Dec 2025 – May 2026</div><div><h3>Web Developer Intern, XL Management Services (Remote)</h3><p>Built responsive frontend pages with HTML, CSS, JavaScript and PHP, and worked with a remote team to deliver and maintain web features.</p></div></div>
+    <div class="r"><div class="d">2025</div><div><h3>MCA, SVKM Institute of Technology, Dhule</h3><p>CGPA 7.2</p></div></div>
+    <div class="r"><div class="d">2022</div><div><h3>BCA, IMRD College, Shahada</h3><p>CGPA 9.0</p></div></div>
+  </div>
+</section>
+
+<section id="certs">
+  <h2>Certifications</h2>
+  <p class="sub">AWS (IT Vedant Training Institute) and Java Fundamentals (IBM), plus course certificates below. Select one to enlarge.</p>
+  <div class="certs">
+    <button data-img="certs/awscloudpractitionerawsci_122_1742559660.jpg"><img loading="lazy" src="certs/awscloudpractitionerawsci_122_1742559660.jpg" alt="AWS Cloud Practitioner certificate"><span>AWS Cloud Practitioner</span></button>
+    <button data-img="certs/core-java-springboot.jpg"><img loading="lazy" src="certs/core-java-springboot.jpg" alt="Core Java and Spring Boot certificate"><span>Core Java and Spring Boot</span></button>
+    <button data-img="certs/fullstack-aws.jpg"><img loading="lazy" src="certs/fullstack-aws.jpg" alt="Full Stack with AWS certificate"><span>Full Stack Web Development with AWS</span></button>
+    <button data-img="certs/advancedsqlmongodb.jpg"><img loading="lazy" src="certs/advancedsqlmongodb.jpg" alt="Advanced SQL and MongoDB certificate"><span>Advanced SQL and MongoDB</span></button>
+    <button data-img="certs/angular14.jpg"><img loading="lazy" src="certs/angular14.jpg" alt="Angular 14 certificate"><span>Angular 14</span></button>
+    <button data-img="certs/programming-foundation-sql.jpg"><img loading="lazy" src="certs/programming-foundation-sql.jpg" alt="Programming Foundation and SQL certificate"><span>Programming Foundation and SQL</span></button>
+    <button data-img="certs/python-django.jpg"><img loading="lazy" src="certs/python-django.jpg" alt="Python and Django certificate"><span>Python and Django</span></button>
+    <button data-img="certs/advanced-web-designing.jpg"><img loading="lazy" src="certs/advanced-web-designing.jpg" alt="Advanced Web Designing certificate"><span>Advanced Web Designing</span></button>
+    <button data-img="certs/web-designing-basics.jpg"><img loading="lazy" src="certs/web-designing-basics.jpg" alt="Web Designing Basics certificate"><span>Web Designing Basics</span></button>
+  </div>
+  <dialog id="lb"><img id="lbimg" alt=""><form method="dialog"><button>Close</button></form></dialog>
+</section>
+
+<section id="resume">
+  <h2>Resume</h2>
+  <p class="sub">Full-Stack Developer (Java, Spring Boot, React).</p>
+  <div class="res">
+    <div class="card"><h3>Chetan Bagul, Full-Stack</h3><small>Nashik · MCA 2025</small><a href="resumes/Chetan_Bagul_FullStack_Resume.pdf" target="_blank" rel="noopener">View PDF</a><a href="resumes/Chetan_Bagul_FullStack_Resume.docx" download>Download Word</a></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card contact">
+    <h2>Let's talk about your next full-stack hire</h2>
+    <p>Available for full-stack and Java / Spring Boot roles. I reply by email and phone.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:bglchetan@gmail.com">bglchetan@gmail.com</a>
+      <a class="btn o" href="tel:+919503994074">+91 95039 94074</a>
+      <a class="btn o" href="https://linkedin.com/in/chetan-bagul-661761202" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn o" href="https://github.com/chetan-bagul" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Chetan Bagul · Nashik, Maharashtra</footer>
+<script>
+const lb=document.getElementById('lb'),im=document.getElementById('lbimg');
+document.querySelectorAll('.certs button').forEach(b=>b.addEventListener('click',()=>{im.src=b.dataset.img;im.alt=b.querySelector('img').alt;lb.showModal()}));
+lb.addEventListener('click',e=>{if(e.target===lb)lb.close()});
+</script>
+</body>
+</html>
